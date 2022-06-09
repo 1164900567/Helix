@@ -56,17 +56,17 @@ As such, those are in use within the default layer at this time.*/
               };
               raise_layer {
  // ---------------------------------------------------------------------------------------------------------------------------------
- // |       |       |       |       |       |       |                                    |       |       |       |       |       |       |
- // |   `   |   1   |   2   |   3   |   4   |   5   |                                    |   6   |   7   |   8   |   9   |   0   |  DEL  |
- // |       |  F1   |  F2   |  F3   |  F4   |  F5   |                                    |  F6   |   -   |   =   |   [   |   ]   |   \   |
- // |       |  F7   |  F8   |  F9   |  F10  |  F11  |       |                    |       |  F12  |       | PSCRN | PG_DN | PG_UP |       |
- // |       |       |       |       |       |       |       |                    |       |       |       | NEXT  | VOL-  | VOL+  | PLAY  |
+ // |       |  F1   |  F2   |  F3   |  F4   |  F5   |                                    |  NUM  |  SLCK |  CAPS |       |       |       |
+ // |       |  F6   |  F7   |  F8   |  F9   |  F10  |                                    |  KP7  |  KP8  |  KP9  |       |       |       |
+ // |       |  F11  |  F12  | PSCRN |       |  HOME |                                    |  KP4  |  KP5  |  KP6  |       |       |       |
+ // |       |       |       |       |       |       |   {   |                    |   }   |  KP1  |  KP2  |  KP3  |       |       |       |
+ // |       |       |       |       |       |       |       |                    |       |  KP0  |   .   |   #   |       |       |       |
                      bindings = <
-       &trans    &trans &trans &trans &trans  &trans                       &trans  &trans    &trans     &trans       &trans       &trans
-       &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4  &kp N5                       &kp N6  &kp N7    &kp N8     &kp N9       &kp N0       &kp DEL
-       &trans    &kp F1 &kp F2 &kp F3 &kp F4  &kp F5                       &kp F6  &kp MINUS &kp EQUAL  &kp LBKT     &kp RBKT     &kp BSLH
-       &trans    &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &trans        &trans &kp F12 &trans    &kp PSCRN  &kp PG_DN    &kp PG_UP    &trans
-       &trans    &trans &trans &trans &trans  &trans  &trans        &trans &trans  &trans    &kp C_NEXT &kp C_VOL_DN &kp C_VOL_UP &kp C_PP
+       &trans  &kp F1   &kp F2   &kp F3     &kp F4    &kp F5                         &kp KP_NUM  &kp SLCK    &kp CAPS   &trans   &trans   &trans
+       &trans  &kp F6   &kp F7   &kp F8     &kp F9    &kp F10                        &kp KP_N7   &kp KP_N8   &kp KP_N9  &trans   &trans   &trans
+       &trans  &kp F11  &kp F12  &kp PSCRN  &trans    &kp HOME                       &kp KP_N4   &kp KP_N5   &kp KP_N6  &trans   &trans   &trans
+       &trans  &trans   &trans   &trans     &trans    &trans    &kp LBRC   &kp RBRC  &kp KP_N1   &kp KP_N2   &kp KP_N3  &trans   &trans   &trans
+       &trans  &trans   &trans   &trans     &trans    &trans    &trans     &trans    &kp KP_N0   &kp KP_DOT  &kp HASH   &trans   &trans   &trans
                      >;
               };
               adjust_layer {
