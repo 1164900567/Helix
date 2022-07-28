@@ -56,17 +56,17 @@ As such, those are in use within the default layer at this time.*/
               };
               raise_layer {
  // ---------------------------------------------------------------------------------------------------------------------------------
- // |       |  F1   |  F2   |  F3   |       |       |                                    |  NUM  |  SLCK |  CAPS |       |       |       |
+ // |       |  F1   |  F2   |  F3   |       |       |                                    |  NUM  |  SLCK |  CAPS | BT_CLR| BT_NXT|       |
  // |       |  F4   |  F5   |  F6   |       |       |                                    |  KP7  |  KP8  |  KP9  |       |       |       |
  // |   $   |  F7   |  F8   |  F9   |       |       |                                    |  KP4  |  KP5  |  KP6  |       |       |       |
  // |       |  F10  |  F11  |  F12  | PSCRN |  HOME |   {   |                    |   }   |  KP1  |  KP2  |  KP3  |       |       |       |
  // |       |       |       |       |       |       |       |                    |       |  KP0  |   .   |   #   |       |       |       |
                      bindings = <
-       &trans   &kp F1   &kp F2   &kp F3     &trans    &trans                         &kp KP_NUM  &kp SLCK    &kp CAPS   &trans   &trans   &trans
-       &trans   &kp F4   &kp F5   &kp F6     &trans    &trans                         &kp KP_N7   &kp KP_N8   &kp KP_N9  &trans   &trans   &trans
-       &kp DLLR &kp F7   &kp F8   &kp F9     &trans    &trans                         &kp KP_N4   &kp KP_N5   &kp KP_N6  &trans   &trans   &trans
-       &trans   &kp F10  &kp F11  &kp F12    &kp PSCRN &kp HOME  &kp LBRC   &kp RBRC  &kp KP_N1   &kp KP_N2   &kp KP_N3  &trans   &trans   &trans
-       &trans   &trans   &trans   &trans     &trans    &trans    &trans     &trans    &kp KP_N0   &kp KP_DOT  &kp HASH   &trans   &trans   &trans
+       &trans   &kp F1   &kp F2   &kp F3     &trans    &trans                         &kp KP_NUM  &kp SLCK    &kp CAPS   &bt BT_CLR &bt BT_NXT &trans
+       &trans   &kp F4   &kp F5   &kp F6     &trans    &trans                         &kp KP_N7   &kp KP_N8   &kp KP_N9  &trans     &trans     &trans
+       &kp DLLR &kp F7   &kp F8   &kp F9     &trans    &trans                         &kp KP_N4   &kp KP_N5   &kp KP_N6  &trans     &trans     &trans
+       &trans   &kp F10  &kp F11  &kp F12    &kp PSCRN &kp HOME  &kp LBRC   &kp RBRC  &kp KP_N1   &kp KP_N2   &kp KP_N3  &trans     &trans     &trans
+       &trans   &trans   &trans   &trans     &trans    &trans    &trans     &trans    &kp KP_N0   &kp KP_DOT  &kp HASH   &trans     &trans     &trans
                      >;
               };
               adjust_layer {
