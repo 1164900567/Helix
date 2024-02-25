@@ -27,61 +27,61 @@ As such, those are in use within the default layer at this time.*/
               default_layer {
  // ---------------------------------------------------------------------------------------------------------------------------------
  // | ESC    |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  BSPC  |
- // | TAB    |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  DEL   |
- // | GRAVE  |   A    |   S    |   D    |   F    |   G    |                                      |   H    |   J    |   K    |   L    |   ;    |   '    |
- // | SHIFT  |   Z    |   X    |   C    |   V    |   B    | BSLH   |                    |  FSLH  |   N    |   M    |   ,    |   .    |  UP    |  ENTER |
- // | LCTRL  |  LGUI  |  INT2  |  INT4  |  LALT  | SPACE  | RAISE  |                    |  RAISE | RAISE  |  MINUS |  EQUAL |  LEFT  |  DOWN  |  RIGHT |
+ // | TAB    |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  ESC   |
+ // | MINUS  |   A    |   S    |   D    |   F    |   G    |                                      |   H    |   J    |   K    |   L    |   ;    |   '    |
+ // | SHIFT  |   Z    |   X    |   C    |   V    |   B    | BSLH   |                    |  FSLH  |   N    |   M    |   ,    |   .    |   /    |  ENTER |
+ // | LCTRL  |  LGUI  |  INT2  |  INT4  |  LALT  | SPACE  | SPACE  |                    |  BSPC  | LOWER  |  RAISE |  LGUI  |  LEFT  |  DOWN  |  RIGHT |
                      bindings = <
-       &kp ESC    &kp N1   &kp N2   &kp N3   &kp N4    &kp N5                                      &kp N6    &kp N7    &kp N8    &kp N9     &kp N0    &kp BSPC
-       &kp TAB    &kp Q    &kp W    &kp E    &kp R     &kp T                                       &kp Y     &kp U     &kp I     &kp O      &kp P     &kp DEL
-       &kp GRAVE  &kp A    &kp S    &kp D    &kp F     &kp G                                       &kp H     &kp J     &kp K     &kp L      &kp SEMI  &kp SQT
-       &kp LSHFT  &kp Z    &kp X    &kp C    &kp V     &kp B     &kp NON_US_BSLH         &kp FSLH  &kp N     &kp M     &kp COMMA &kp PERIOD &kp UP    &kp ENTER
-       &kp LCTRL  &kp LGUI &kp INT2 &kp INT4 &kp LALT  &kp SPACE &mo RAISE               &mo RAISE &kp SPACE &kp MINUS &kp EQUAL &kp LEFT   &kp DOWN  &kp RIGHT
+       &kp ESC    &kp N1   &kp N2   &kp N3   &kp N4    &kp N5                                     &kp N6    &kp N7   &kp N8    &kp N9   &kp N0    &kp BSPC
+       &kp TAB    &kp Q    &kp W    &kp E    &kp R     &kp T                                      &kp Y     &kp U    &kp I     &kp O    &kp P     &kp ESC
+       &kp MINUS  &kp A    &kp S    &kp D    &kp F     &kp G                                      &kp H     &kp J    &kp K     &kp L    &kp SEMI  &kp SQT
+       &kp LSHFT  &kp Z    &kp X    &kp C    &kp V     &kp B     &kp NON_US_BSLH         &kp FSLH &kp N     &kp M    &kp COMMA &kp DOT  &kp FSLH  &kp ENTER
+       &kp LCTRL  &kp LGUI &kp INT2 &kp INT4 &kp LALT  &kp SPACE &kp SPACE               &kp BSPC &mo LOWER &mo RAISE &kp LGUI &kp LEFT &kp DOWN  &kp RIGHT
                      >;
               };
               lower_layer {
  // ---------------------------------------------------------------------------------------------------------------------------------
  // |      |      |      |      |      |      |                                  |      |      |      |      |      |      |
- // |  ~   |  !   |  @   |  #   |  $   |  %   |                                  |  ^   |  &   |  *   |  (   |  )   |      |
- // |      |      |      |      |      |      |                                  |      |  _   |  +   |  {   |  }   | PIPE |
- // |      |      |      |      |      |      |  (   |                    |  )   |      |      |      | HOME | END  |      |
+ // |      |CAPS  | F1   | F2   | F3   | F4   |                                  |NUBS  |  7   |  8   |  9  |  0    | DEL  |
+ // |NUHS  |      | F5   | F6   | F7   | F8   |                                  |LBKT  |  4   |  5   |  6  |MINUS  |EQUAL |
+ // |      |      | F9   | F10  | F11  | F12  |   (  |                    |   )  |RBKT  |  1   |  2   |  3  | DOT   |GRAVE |
  // |      |      |      |      |      |      |      |                    |      |      |      |      |      |      |      |
                      bindings = <
-       &trans    &trans   &trans &trans   &trans   &trans                             &trans    &trans    &trans    &trans   &trans   &trans
-       &kp TILDE &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                          &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &trans
-       &trans    &trans   &trans &trans   &trans   &trans                             &trans    &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE
-       &trans    &trans   &trans &trans   &trans   &trans    &kp LPAR        &kp RPAR &trans    &trans    &trans    &kp HOME &kp END  &trans
-       &trans    &trans   &trans &trans   &trans   &trans    &trans          &trans   &trans    &trans    &trans    &trans   &trans   &trans
+       &trans    &trans   &trans &trans   &trans   &trans                             &trans    &trans    &trans    &trans    &trans   &trans
+       &trans    &kp CAPS &kp F1 &kp F2   &kp F3   &kp F4                             &kp NUBS &kp N7 &kp N8 &kp N9 &kp N0    &kp DEL
+       &kp NUHS  &trans   &kp F5 &kp F6   &kp F7   &kp F8                             &kp LBKT &kp N4 &kp N5 &kp N6 &kp MINUS &kp EQUAL 
+       &trans    &trans   &kp F9 &kp F10  &kp F11  &kp F12   &kp LPAR        &kp RPAR &kp RBKT &kp N1 &kp N2 &kp N3 &kp DOT   &kp GRAVE 
+       &trans    &trans   &trans &trans   &trans   &trans    &trans          &trans   &trans    &trans    &trans    &trans    &trans   &trans
                      >;
               };
               raise_layer {
  // ---------------------------------------------------------------------------------------------------------------------------------
- // |       |  F1   |  F2   |  F3   |       |       |                                    |  NUM  |  SLCK |  CAPS | BT_CLR| BT_NXT|       |
- // |       |  F4   |  F5   |  F6   |       |       |                                    |  KP7  |  KP8  |  KP9  |       |       |       |
- // |   $   |  F7   |  F8   |  F9   |       |       |                                    |  KP4  |  KP5  |  KP6  |       |       |       |
- // |       |  F10  |  F11  |  F12  | PSCRN |  HOME |   {   |                    |   }   |  KP1  |  KP2  |  KP3  |       |       |       |
- // |       |       |       |       |       |       |       |                    |       |  KP0  |   .   |   #   |       |       |       |
+ // |       |       |       |       |       |       |                                    |       |       |       |     |     |           |
+ // |       |       |       | INS   |HOME   |PG_UP  |                                    |       |       |       |PSCRN|SLCK |PAUSE_BREAK|
+ // |       |       |       | DEL   | END   |PG_DN  |                                    |       |       |       |LBKT | UP  |   RBKT    |
+ // |       |       |       |       |       |       |   {   |                    |   }   |       |       |       |LEFT |DOWN |   RIGHT   |
+ // |       |       |       |       |       |       |       |                    |       |ADJUST |       |       |     |     |           |
                      bindings = <
-       &trans   &kp F1   &kp F2   &kp F3     &trans    &trans                         &kp KP_NUM  &kp SLCK    &kp CAPS   &bt BT_CLR &bt BT_NXT &trans
-       &trans   &kp F4   &kp F5   &kp F6     &trans    &trans                         &kp KP_N7   &kp KP_N8   &kp KP_N9  &trans     &trans     &trans
-       &kp DLLR &kp F7   &kp F8   &kp F9     &trans    &trans                         &kp KP_N4   &kp KP_N5   &kp KP_N6  &trans     &trans     &trans
-       &trans   &kp F10  &kp F11  &kp F12    &kp PSCRN &kp HOME  &kp LBRC   &kp RBRC  &kp KP_N1   &kp KP_N2   &kp KP_N3  &trans     &trans     &trans
-       &trans   &trans   &trans   &trans     &trans    &trans    &trans     &trans    &kp KP_N0   &kp KP_DOT  &kp HASH   &trans     &trans     &trans
+       &trans &trans &trans  &trans   &trans    &trans                       &trans &trans &trans      &trans   &trans   &trans
+       &trans &trans &kp INS &kp HOME &kp PG_UP &trans                       &trans &trans &trans      &kp PSCRN &kp SLCK &kp PAUSE_BREAK
+       &trans &trans &kp DEL &kp END  &kp PG_DN &trans                       &trans &trans &trans      &kp LBKT  &kp UP   &kp RBKT
+       &trans &trans &trans  &trans   &trans    &trans  &kp LBRC   &kp RBRC  &trans &trans &trans      &kp LEFT  &kp DOWN &kp RIGHT
+       &trans &trans &trans  &trans    &trans   &trans  &trans     &trans    &trans &trans &mo ADJUST  &trans   &trans    &trans
                      >;
               };
               adjust_layer {
  // ---------------------------------------------------------------------------------------------------------------------------------
- // |    `     |    !     |    @     |    #     |    $     |    %     |                                          |    ^     |    &     |    *     |    (     |    )     |  EP TOG  |
- // |  BT CLR  | BT SEL0  | BT SEL1  | BT SEL2  | BGT SEL3 | BT SEL4  |                                          | RGB EFF+ | RGB HUE+ | RGB SAT+ | RGB SPD+ | RGB BRI+ | RGB TOG  |
- // |  BT NXT  | OUT TOG  | OUT USB  | OUT BLE  |          |          |                                          | RGB EFF- | RGB HUE- | RGB SAT- | RGB SPD- | RGB BRI- |          |
- // |  BT PRV  |          |          |          |          |          |    {     |                    |    }     |          |          |          |          |          |          |
+ // |          |          |          |          |          |          |                                          |          |          |          |          |          |          |
+ // |          |BT 1      |BT 2      |BT 3      |BT 4      |BT 5      |                                          |          |          |          |          |          |  BT CLR  |
+ // |          |          |          |          |          |          |                                          |          |          |          |          |          |          |
+ // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
  // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
                      bindings = <
-       &kp GRAVE  &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT                             &kp CARET       &kp AMPS        &kp ASTRK       &kp LPAR        &kp RPAR        &ext_power EP_TOG
-       &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                          &rgb_ug RGB_EFF &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_SPI &rgb_ug RGB_BRI &rgb_ug RGB_TOG 
-       &bt BT_NXT &out OUT_TOG &out OUT_USB &out OUT_BLE &trans       &trans                                &rgb_ug RGB_EFR &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_SPD &rgb_ug RGB_BRD &trans
-       &bt BT_PRV &trans       &trans       &trans       &trans       &trans       &kp LBRC        &kp RBRC &trans          &trans          &trans          &trans          &trans          &trans
-       &trans     &trans       &trans       &trans       &trans       &trans       &trans          &trans   &trans          &trans          &trans          &trans          &trans          &trans
+       &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                          &trans     &trans       &trans       &trans       &trans       &trans
+       &trans     &trans       &trans       &trans       &trans       &trans                                &trans     &trans       &trans       &trans       &trans       &bt  BT_CLR
+       &trans     &trans       &trans       &trans       &trans       &trans                                &trans     &trans       &trans       &trans       &trans       &trans
+       &trans     &trans       &trans       &trans       &trans       &trans       &trans          &trans   &trans     &trans       &trans       &trans       &trans       &trans
+       &trans     &trans       &trans       &trans       &trans       &trans       &trans          &trans   &trans     &trans       &trans       &trans       &trans       &trans
                      >;
               };
        };
